@@ -16,3 +16,32 @@
         overflow-x: hidden;
     }
 }
+
+@keyframes wave {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(20deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+
+    60% {
+        transform: rotate(20deg);
+    }
+
+    80% {
+        transform: rotate(-15deg);
+    }
+}
+
+.wave-hand {
+    display: inline-block;
+    transform-origin: 70% 70%;
+    animation: wave 3s infinite;
+}
