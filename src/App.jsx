@@ -2,6 +2,7 @@ import { Toaster } from "react-hot-toast";
 import HERO_IMAGE from "./assets/home-globe.png";
 import Navbar from "./components/Navbar/Navbar.component";
 import Home from "./sections/Home/Home.section";
+import About from "./sections/About/About.section";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       />
       <div className="relative z-10 px-5 md:px-16 lg:px-24 xl:px-32 mt-14 md:mt-24">
         <Home />
+        <About />
       </div>
       <Toaster />
     </div>

@@ -34,13 +34,13 @@ const Home = () => {
       id="home"
       className="relative flex flex-col items-center justify-center min-h-[100vh]"
     >
-      <div className="container flex flex-col-reverse md:flex-row items-center gap-8">
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-4">
-          <div className="max-w-3xs flex flex-col gap-2 items-center md:items-start">
+      <div className="container flex flex-col-reverse lg:flex-row items-center gap-8">
+        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left gap-4">
+          <div className="max-w-3xs flex flex-col gap-2 items-center lg:items-start">
             <p className="text-[15px] text-gray-600">
               Currently Available For Freelance Worldwide.
             </p>
-            <span className="block h-0.5 w-24 md:w-full bg-gray-600" />
+            <span className="block h-0.5 w-24 lg:w-full bg-gray-600" />
           </div>
           <h3 className="flex text-xl font-semibold items-center mt-2.5 text-slate-700">
             Hi,{" "}
@@ -77,8 +77,12 @@ const Home = () => {
             )}
           </button>
         </div>
-        <div className="w-full md:w-1/2 flex justify-center items-center">
-            <img src={HERO_IMAGE} alt="hero image" className="md:h-[70vh] h-full w-auto" />
+        <div className="w-full lg:w-1/2 flex justify-center items-center">
+          <img
+            src={HERO_IMAGE}
+            alt="hero image"
+            className="lg:h-[70vh] h-full w-auto object-cover"
+          />
         </div>
       </div>
       <SocialLinksCard />
